@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid black;
   height: 50px;
 }
 .nav__group {
@@ -24,4 +23,8 @@
 }
 .nav__items {
   margin: 25px;
+}
+
+body {
+  background-color: bisque;
 }
