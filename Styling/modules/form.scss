@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    width: 250px;
+    height: 20px;
+    border-radius: 6px;
+  }
+
+  &__text-area {
+    width: 250px;
+    border-radius: 7px;
+  }
+}
