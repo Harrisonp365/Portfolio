@@ -1,0 +1,26 @@
+@use "../modules/mixins.scss";
+
+.container {
+  @include mixins.center;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+
+  &__text {
+    font-size: 1.5rem;
+    width: 33%;
+  }
+
+  &__image > img {
+    @include mixins.image;
+  }
+}
+
+.icon__container {
+  margin-top: 10rem;
+  @include mixins.center;
+  justify-content: space-evenly;
+}
+
+.image {
+  @include mixins.image;
+}
