@@ -63,3 +63,38 @@ body {
 .header--h2 {
   margin-top: 5rem;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+}
+.container__text {
+  font-size: 1.5rem;
+  width: 33%;
+}
+.container__image > img {
+  border-radius: 8px;
+}
+.container__image > img--sm {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon__container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  border-radius: 8px;
+}
+.image--sm {
+  width: 3rem;
+  height: 3rem;
+}
