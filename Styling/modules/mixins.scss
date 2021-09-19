@@ -18,6 +18,11 @@
 @mixin image {
   border-radius: 8px;
 
+  &--md {
+    width: 8rem;
+    height: 8rem;
+  }
+
   &--sm {
     width: 3rem;
     height: 3rem;
