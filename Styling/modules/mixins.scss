@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap");
+
 @mixin center {
   display: flex;
   justify-content: center;
@@ -6,11 +8,11 @@
 
 @mixin header {
   @include center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15rem;
 
   &--h2 {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 5rem;
   }
 }
@@ -19,8 +21,8 @@
   border-radius: 8px;
 
   &--md {
-    width: 8rem;
-    height: 8rem;
+    width: 20rem;
+    height: 15rem;
   }
 
   &--sm {
