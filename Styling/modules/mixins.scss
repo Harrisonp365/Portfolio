@@ -1,0 +1,15 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin header {
+  @include center;
+  font-weight: bold;
+  margin-top: 15rem;
+
+  &--h2 {
+    margin-top: 5rem;
+  }
+}

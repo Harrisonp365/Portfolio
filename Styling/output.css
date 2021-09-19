@@ -32,15 +32,32 @@ body {
 .form {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .form__input {
   width: 250px;
   height: 20px;
   border-radius: 6px;
+  margin: 15px;
+}
+.form__input--btn {
+  width: 150px;
+  border-radius: 6px;
+  margin: 15px;
 }
 .form__text-area {
   width: 250px;
   border-radius: 7px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 15rem;
+}
+.header--h2 {
+  margin-top: 5rem;
 }
