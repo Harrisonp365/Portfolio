@@ -1,0 +1,21 @@
+@use "../placeholders/link-styling";
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+
+  &__logo > a {
+    @extend %nav-logo;
+  }
+
+  &__group {
+    display: flex;
+  }
+
+  &__items {
+    @extend %nav-links;
+    margin: 25px;
+  }
+}

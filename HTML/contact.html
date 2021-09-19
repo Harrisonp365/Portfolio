@@ -10,5 +10,44 @@
 
   <body>
     <!-- Contact form that works -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="home.html">H.P.</a>
+      </div>
+      <div class="nav__group">
+        <a class="nav__items" href="home.html">Home</a>
+        <a class="nav__items" href="aboutMe.html">About Me</a>
+        <a class="nav__items" href="projects.html">Projects</a>
+        <a class="nav__items" href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <header class="header header--h2">
+      <h1>Lets create amazing projects together!</h2>
+    </header>
+
+    <main>
+      <form class="form">
+        <input class="form__input" type="text" name="name" placeholder="Name" />
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          class="form__input"
+          type="number"
+          name="number"
+          placeholder="Phone number"
+        />
+        <textarea
+          class="form__text-area"
+          name="text-area"
+          placeholder="Let's make magic happen"
+        ></textarea>
+        <input class="form__input--btn" type="submit" name="submit" />
+      </form>
+    </main>
   </body>
 </html>

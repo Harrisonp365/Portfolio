@@ -1,0 +1,8 @@
+@use "./modules/navbar";
+@use "../Styling/modules/background-img";
+@use "../Styling/modules/form";
+@use "../Styling/modules/mixins.scss";
+
+.header {
+  @include mixins.header;
+}

@@ -1,0 +1,25 @@
+@use "./mixins.scss";
+
+.form {
+  @include mixins.center;
+  flex-direction: column;
+
+  &__input {
+    width: 250px;
+    height: 20px;
+    border-radius: 6px;
+    margin: 15px;
+
+    &--btn {
+      width: 150px;
+      border-radius: 6px;
+      margin: 15px;
+    }
+  }
+
+  &__text-area {
+    width: 360px;
+    height: 300px;
+    border-radius: 7px;
+  }
+}
