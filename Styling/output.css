@@ -79,6 +79,14 @@ body {
   width: 3rem;
   height: 3rem;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container__text {
+    width: 60%;
+  }
+}
 
 .icon__container {
   margin-top: 10rem;

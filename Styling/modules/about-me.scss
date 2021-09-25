@@ -1,4 +1,5 @@
 @use "../modules/mixins.scss";
+@use "../partials/devices";
 
 .container {
   @include mixins.center;
@@ -12,6 +13,14 @@
 
   &__image > img {
     @include mixins.image;
+  }
+
+  @include devices.tablet {
+    flex-direction: column-reverse;
+
+    &__text {
+      width: 60%;
+    }
   }
 }
 
