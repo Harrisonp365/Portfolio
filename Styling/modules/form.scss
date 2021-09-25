@@ -1,23 +1,36 @@
 @use "./mixins.scss";
+@use "../partials/palette";
 
 .form {
   @include mixins.center;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 
   &__input {
+    color: palette.$secondary-text-color;
     width: 250px;
     height: 20px;
+    border: 2px solid palette.$secondary-text-color;
     border-radius: 6px;
     margin: 15px;
 
     &--btn {
-      width: 150px;
+      font-size: 1.2rem;
+      background-color: palette.$primary-background-color;
+      width: 200px;
+      height: 1.8rem;
       border-radius: 6px;
       margin: 15px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: palette.$secondary-text-color;
+      }
     }
   }
 
   &__text-area {
+    border: 2px solid palette.$secondary-text-color;
     width: 360px;
     height: 300px;
     border-radius: 7px;
