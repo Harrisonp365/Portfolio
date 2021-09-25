@@ -144,54 +144,47 @@ body {
   margin-top: 5rem;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
+* {
+  box-sizing: border-box;
 }
 
-.projects__container {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
-  border-radius: 8px;
+.gallery {
+  margin-top: 8rem;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
 }
-.projects__container__image {
+.gallery__item {
+  border: 2px solid black;
+}
+.gallery__item img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
-.projects__container__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: peachpuff;
-  border-radius: 8px;
+.gallery__item:hover {
+  border: 8px solid red;
 }
-.projects__container__icon {
-  color: white;
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
+@media only screen and (max-width: 700px) {
+  .gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .gallery {
+    width: 100%;
+  }
+}
+div.desc {
+  padding: 15px;
   text-align: center;
 }
 
-.container:hover .container__overlay {
-  opacity: 1;
-}
-
-.fa-github:hover {
-  color: lightblue;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .header {
