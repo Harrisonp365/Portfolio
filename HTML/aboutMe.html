@@ -6,20 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Styling/output.css" />
     <title>Harrison Powell</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../Styling/images&icons/favicon.ico"
+    />
   </head>
 
-  <body>
+  <body class="body">
     <!-- About me text, photo to the right, tech stack below (fontawesome logos) -->
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="home.html">H.P.</a>
-      </div>
-      <div class="nav__group">
-        <a class="nav__items" href="home.html">Home</a>
-        <a class="nav__items" href="aboutMe.html">About Me</a>
-        <a class="nav__items" href="projects.html">Projects</a>
-        <a class="nav__items" href="contact.html">Contact Me</a>
-      </div>
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="home.html" class="logo">H.P.</a>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="contact">Contact Me</a></li>
+      </ul>
     </nav>
+
+    <header class="header header--h2">
+      <h1>Who am I and what do I do?</h1>
+    </header>
+
+    <main class="container">
+      <div class="container__text">
+        <p>
+          I am a positive, proactive and resourceful engineer seeking to broaden
+          technical exposure as a junior software engineer. A talented engineer
+          with a commitment to delivery and quality. Effective communication
+          skills, used to working under pressure, with a “can do” attitude. My
+          current favourite language is C++ but I am always looking to try new
+          things and evolve. I am always trying to learn more and become the
+          best programmer I can!
+        </p>
+      </div>
+      <div class="container__image">
+        <img
+          class="image"
+          src="../Styling/images&icons/portfolio-me.png"
+          alt="Image of me"
+        />
+      </div>
+    </main>
+    <div class="icon__container">
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-c++-50.png"
+        alt="C++"
+      />
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-qt-50.png"
+        alt="Qt"
+      />
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-html-5-50.png"
+        alt="HTML 5"
+      />
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-css3-50.png"
+        alt="CSS 3"
+      />
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-sass-avatar-50.png"
+        alt="SASS"
+      />
+      <img
+        class="image image--sm"
+        src="../Styling/images&icons/icons8-javascript-logo-50.png"
+        alt="JavaScript"
+      />
+    </div>
   </body>
 </html>
