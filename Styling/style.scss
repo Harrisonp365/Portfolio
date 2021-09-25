@@ -4,6 +4,7 @@
 @use "../Styling/modules/mixins.scss";
 @use "../Styling/modules/about-me.scss";
 @use "../Styling/modules/home.scss";
+@use "../Styling/modules/gallery.scss";
 
 .header {
   @include mixins.header;

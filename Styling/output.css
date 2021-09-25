@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap");
 .nav__logo > a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Birthstone Bounce", cursive;
   font-size: 35px;
+  font-weight: bold;
   color: black;
   text-decoration: none;
 }
@@ -26,7 +29,9 @@
 }
 
 body {
-  background-color: bisque;
+  background: url("https://free4kwallpapers.com/uploads/originals/2017/06/20/minimal-monochrome-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form {
@@ -66,6 +71,10 @@ body {
 .container__image > img {
   border-radius: 8px;
 }
+.container__image > img--md {
+  width: 20rem;
+  height: 15rem;
+}
 .container__image > img--sm {
   width: 3rem;
   height: 3rem;
@@ -82,6 +91,10 @@ body {
 .image {
   border-radius: 8px;
 }
+.image--md {
+  width: 20rem;
+  height: 15rem;
+}
 .image--sm {
   width: 3rem;
   height: 3rem;
@@ -97,37 +110,90 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15rem;
   margin-top: 18rem;
+  font-family: "Birthstone Bounce", cursive;
   font-size: 4rem;
+  color: black;
 }
 .home__text > h1--h2 {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 5rem;
 }
 .home__text > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15rem;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 0.4rem;
   font-size: 2rem;
 }
 .home__text > h2--h2 {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 8px;
+}
+.container__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.container__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: peachpuff;
+  border-radius: 8px;
+}
+.container__icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .container__overlay {
+  opacity: 1;
+}
+
+.fa-github:hover {
+  color: lightblue;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15rem;
 }
 .header--h2 {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 5rem;
 }

@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Styling/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Harrison Powell</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../Styling/images&icons/favicon.ico"
+    />
   </head>
-
+  <!-- flexbox with grid inside to align items: center -->
   <body>
     <!-- animated sliding gallery of projects -->
     <nav class="nav">
@@ -21,5 +30,79 @@
         <a class="nav__items" href="contact.html">Contact Me</a>
       </div>
     </nav>
+
+    <header class="header header--h2">
+      <h1>Check out some of my personal projects!</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <img
+          class="container__image image--md"
+          src="../Styling/images&icons/HazzieToken.png"
+          alt="ERC20 token I made in C++"
+        />
+        <div class="container__overlay">
+          <a
+            href="https://github.com/Harrisonp365/ERC20-HazzieToken"
+            class="container__icon"
+            title="User Profile"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          class="container__image image--md"
+          src="../Styling/images&icons/BlockyChain.jpg"
+          alt="My C++ blockchain"
+        />
+        <div class="container__overlay">
+          <a
+            href="https://github.com/Harrisonp365/BlockyChain"
+            class="container__icon"
+            title="User Profile"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          class="container__image image--md"
+          src="../Styling/images&icons/portfolio-img.png"
+          alt="Current portfolio"
+        />
+        <div class="container__overlay">
+          <a
+            href="https://github.com/Harrisonp365/Portfolio"
+            class="container__icon"
+            title="User Profile"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          class="container__image image--md"
+          src="../Styling/images&icons/Screenshooter.jpg"
+          alt="C# Screenshot tool"
+        />
+        <div class="container__overlay">
+          <a
+            href="https://github.com/Harrisonp365/ScreenshotCSharp"
+            class="container__icon"
+            title="User Profile"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
