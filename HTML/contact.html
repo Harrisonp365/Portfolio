@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styling/output.css" />
+    <title>Harrison Powell</title>
+    <link
+    rel="shortcut icon"
+    type="image/jpg"
+    href="../Styling/images&icons/favicon.ico"
+  />
+  </head>
+
+  <body>
+    <!-- Contact form that works -->
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="home.html" class="logo">H.P.</a>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header class="header header--h2">
+      <h1>Lets create amazing projects together!</h2>
+    </header>
+
+    <main>
+      <form class="form" action="https://formspree.io/f/xwkayjrr" method="post" enctype="multipart/form-data">
+        <input class="form__input" type="text" name="name" placeholder="Name" />
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          class="form__input"
+          type="number"
+          name="number"
+          placeholder="Phone number"
+        />
+        <textarea
+          class="form__text-area"
+          name="text-area"
+          placeholder="Let's make magic happen"
+        ></textarea>
+        <input class="form__input--btn" type="submit" name="submit" />
+      </form>
+    </main>
+  </body>
+</html>

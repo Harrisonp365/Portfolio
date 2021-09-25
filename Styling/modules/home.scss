@@ -1,0 +1,21 @@
+@use "../modules/mixins.scss";
+
+.home {
+  @include mixins.center;
+  flex-direction: column;
+
+  &__text > h1 {
+    @include mixins.header;
+    margin-top: 18rem;
+    font-family: "Birthstone Bounce", cursive;
+    font-size: 4rem;
+    color: black;
+  }
+
+  &__text > h2 {
+    @include mixins.header;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4rem;
+    font-size: 2rem;
+  }
+}

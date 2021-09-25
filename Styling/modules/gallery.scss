@@ -1,0 +1,121 @@
+@use "../modules/mixins.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  margin-top: 8rem;
+  margin-left: 16px;
+  padding: 0 6px;
+  float: left;
+  width: 23%;
+
+  &__item {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__item img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery {
+    width: 48%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    width: 100%;
+  }
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// @media only screen and (max-width: 700px) {
+//   .gallery {
+//     width: 49.99999%;
+//     margin: 6px 0;
+//   }
+// }
+
+// @media only screen and (max-width: 500px) {
+//   .gallery {
+//     width: 100%;
+//   }
+// }
+
+// .main__gallery {
+//   @include mixins.center;
+//   // justify-content: space-evenly;
+// }
+
+// .projects__container {
+//   position: relative;
+//   width: 100%;
+//   max-width: 380px;
+//   border-radius: 8px;
+
+//   &__image {
+//     // @include mixins.image;
+//     width: 100%;
+//     height: auto;
+//     border-radius: 8px;
+//   }
+
+//   &__overlay {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0;
+//     transition: 0.3s ease;
+//     background-color: peachpuff;
+//     border-radius: 8px;
+//   }
+
+//   &__icon {
+//     color: white;
+//     font-size: 100px; // font size as using font awesome
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     -ms-transform: translate(-50%, -50%);
+//     text-align: center;
+//   }
+// }
+
+// .container:hover .container__overlay {
+//   opacity: 1;
+// }
+
+// .fa-github:hover {
+//   color: lightblue;
+// }
