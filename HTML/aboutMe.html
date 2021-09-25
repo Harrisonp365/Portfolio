@@ -15,16 +15,18 @@
 
   <body class="body">
     <!-- About me text, photo to the right, tech stack below (fontawesome logos) -->
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="home.html">H.P.</a>
-      </div>
-      <div class="nav__group">
-        <a class="nav__items" href="home.html">Home</a>
-        <a class="nav__items" href="aboutMe.html">About Me</a>
-        <a class="nav__items" href="projects.html">Projects</a>
-        <a class="nav__items" href="contact.html">Contact Me</a>
-      </div>
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="home.html" class="logo">H.P.</a>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="contact">Contact Me</a></li>
+      </ul>
     </nav>
 
     <header class="header header--h2">

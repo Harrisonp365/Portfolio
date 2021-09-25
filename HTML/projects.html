@@ -19,16 +19,18 @@
   <!-- flexbox with grid inside to align items: center -->
   <body>
     <!-- animated sliding gallery of projects -->
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="home.html">H.P.</a>
-      </div>
-      <div class="nav__group">
-        <a class="nav__items" href="home.html">Home</a>
-        <a class="nav__items" href="aboutMe.html">About Me</a>
-        <a class="nav__items" href="projects.html">Projects</a>
-        <a class="nav__items" href="contact.html">Contact Me</a>
-      </div>
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="home.html" class="logo">H.P.</a>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="contact">Contact Me</a></li>
+      </ul>
     </nav>
 
     <header class="header header--h2">
@@ -45,7 +47,12 @@
             height="400"
           />
         </a>
-        <div class="desc">My own blockchain</div>
+        <div class="desc">
+          A blockchain I buit in C++ it uses the same hashing algorithm as
+          Bitcoin and is based on the Merkle tree along with some changes to
+          make it more secure than BTC. The thumbnail is the first transaction
+          after the genesis block.
+        </div>
       </div>
     </div>
 
@@ -62,7 +69,11 @@
             height="400"
           />
         </a>
-        <div class="desc">A simple screenshot application built using C#</div>
+        <div class="desc">
+          As a way to dip my toes into as many languages as possible. I
+          re-created a basic version of a screen shot application, I originally
+          built using C++ just this one was built using C#.
+        </div>
       </div>
     </div>
 
@@ -80,9 +91,10 @@
           />
         </a>
         <div class="desc">
-          Want to buy some crypto currency? Can I tempt you with my very own
-          ERC-20 token. The extremely sought after HazzieToken is now up for
-          grabs!
+          Now Crypto currencies are a hot topic and a great investment. I know
+          you are now what currency should I buy? Can I tempt you with my very
+          own ERC-20 token built using solidity. The extremely sought after
+          HazzieToken is now up for grabs!
         </div>
       </div>
     </div>
@@ -98,8 +110,10 @@
           />
         </a>
         <div class="desc">
-          My first portfolio built using HTML, Scss and touches of JavaScript.
-          My first portfolio built using HTML, Scss and touches of JavaScript.
+          This is my first portfolio I have built. The above image was the
+          initial wireframe made with figma. The portfolio is built using HTML
+          and SCSS. There is no JavaScript yet but hopefully in the next
+          iteration there will be.
         </div>
       </div>
     </div>
