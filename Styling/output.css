@@ -143,18 +143,18 @@ main {
   justify-content: space-evenly;
 }
 
-.container {
+.projects__container {
   position: relative;
   width: 100%;
   max-width: 380px;
   border-radius: 8px;
 }
-.container__image {
+.projects__container__image {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.container__overlay {
+.projects__container__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -167,7 +167,7 @@ main {
   background-color: peachpuff;
   border-radius: 8px;
 }
-.container__icon {
+.projects__container__icon {
   color: white;
   font-size: 100px;
   position: absolute;
